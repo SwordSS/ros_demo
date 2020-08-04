@@ -3,3 +3,4 @@
 * rosparam
 * dynamic_tutorials
 * yaml
+* learning_communication
