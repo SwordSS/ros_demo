@@ -11,3 +11,4 @@
 * dynamic_tutorials写一个自己的demo
 * 添加tf2
 * communication写一些自己总结的demo
+* tf需要修改demo，写得不太好
