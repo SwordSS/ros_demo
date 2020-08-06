@@ -6,3 +6,8 @@
 * learning_communication
 * use_hpp
 * tf
+
+> 一些留下没做的事
+* dynamic_tutorials写一个自己的demo
+* 添加tf2
+* communication写一些自己总结的demo
