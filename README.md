@@ -11,4 +11,4 @@
 * dynamic_tutorials写一个自己的demo
 * 添加tf2
 * communication写一些自己总结的demo
-* tf需要修改demo，写得不太好
+* demo_yaml每次写yaml的时候,顺序乱了，看看能不能保存完顺序都不乱
