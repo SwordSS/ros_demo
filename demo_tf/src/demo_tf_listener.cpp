@@ -23,16 +23,16 @@ int main(int argc, char** argv){
         try{
             ros::Time now=ros::Time::now();
             //下面两行的逻辑关系可以深究一下
-            listener.waitForTransform("/world","/robot",now,ros::Duration(1.0));
-            listener.lookupTransform("/world", "/robot",now, transform);
+            listener.waitForTransform("/odom","/base_footprint",now,ros::Duration(1.0));
+            listener.lookupTransform("/odom", "/base_footprint",now, transform);
             //
             saved_x = transform.getOrigin().x();
             saved_y = transform.getOrigin().y();
             saved_z = transform.getOrigin().z();
 
-            saved_rx = transform.getRotation().getAxis().x();
-            saved_ry = transform.getRotation().getAxis().y();
-            saved_rz = transform.getRotation().getAxis().z();
+            saved_rx = transform.getRotation().getX();
+            saved_ry = transform.getRotation().getY();
+            saved_rz = transform.getRotation().getZ();
             saved_rw = transform.getRotation().getW();
 
             ROS_INFO("Transform position received is %f %f %f,rostaion received is %f,%f,%f,%f",saved_x,saved_y,saved_z,saved_rx,saved_ry,saved_rz,saved_rw);
