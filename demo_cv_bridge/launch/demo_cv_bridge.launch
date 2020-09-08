@@ -1,0 +1,5 @@
+<launch>
+    <node name="demo_cv_bridge" pkg="demo_cv_bridge" type="demo_cv_bridge" output="screen">
+        <param name="image_topic" type="string" value="/mynteye/left_rect/image_rect"/>
+    </node>
+</launch>

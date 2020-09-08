@@ -7,6 +7,7 @@
 * use_hpp
 * tf
 * roslog
+* cv_bridge
 
 > 一些留下没做的事
 * dynamic_tutorials写一个自己的demo
@@ -15,4 +16,3 @@
 * communication写一些自己总结的demo
 * demo_yaml每次写yaml的时候,顺序乱了，看看能不能保存完顺序都不乱
 * roslog后面可能增加glog相关
-* cv_bridge
