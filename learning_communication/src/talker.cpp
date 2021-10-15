@@ -17,6 +17,9 @@ int main(int argc, char **argv)
   // 创建一个Publisher，发布名为chatter的topic，消息类型为std_msgs::String
   ros::Publisher chatter_pub = n.advertise<std_msgs::String>("chatter", 1000);
 
+  //配合回调参数传参使用
+  ros::Publisher boost_pub = n.advertise<std_msgs::String>("boost", 1000);
+
   // 设置循环的频率
   ros::Rate loop_rate(10);
 
@@ -32,6 +35,7 @@ int main(int argc, char **argv)
 	// 发布消息
     ROS_INFO("%s", msg.data.c_str());
     chatter_pub.publish(msg);
+    boost_pub.publish(msg);
 
 	// 循环等待回调函数
     ros::spinOnce();

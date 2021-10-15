@@ -1,8 +1,6 @@
 #include <ros/ros.h>
 #include <tf/transform_broadcaster.h>
 
-std::string turtle_name;
-
 int main(int argc, char** argv){
     ros::init(argc, argv, "demo_tf_broadcaster");
     static tf::TransformBroadcaster br;
@@ -29,7 +27,7 @@ int main(int argc, char** argv){
                                 0,0,1);
         transform = tf::Transform(rotation,oriign);
 
-        br.sendTransform(tf::StampedTransform(transform, ros::Time::now(), "map", "base_footprint"));
+        br.sendTransform(tf::StampedTransform(transform, ros::Time::now(), "odom", "base_footprint"));
         ROS_INFO("The transform has broadcasted!");
         ros::Duration(0.05).sleep();
     }
