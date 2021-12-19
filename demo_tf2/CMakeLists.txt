@@ -12,7 +12,6 @@ find_package(catkin REQUIRED COMPONENTS
   rospy
   tf2_ros
   geometry_msgs
-  turtlesim
 )
 
 ## System dependencies are found with CMake's conventions
