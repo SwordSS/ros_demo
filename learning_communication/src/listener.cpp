@@ -4,7 +4,6 @@
  
 #include "ros/ros.h"
 #include <std_msgs/String.h>
-#include <std_msgs/String.h>
 
 // 接收到订阅的消息后，会进入消息回调函数
 void chatterCallback(const std_msgs::String::ConstPtr& msg)
