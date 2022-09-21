@@ -9,6 +9,7 @@
 * tf2
 * roslog
 * cv_bridge
+* rosbag
 
 > 一些留下没做的事
 * dynamic_tutorials写一个自己的demo
