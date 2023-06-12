@@ -20,9 +20,10 @@ int main(int argc, char** argv){
     std::string bag_path = home_path+"/test_bag.bag";
     bag.open(bag_path, rosbag::bagmode::Read);
 
-    std::string chatter_topic = "chatter";
-    std::string number_topic = "numbers";
-    std::string test_topic = "numbers_test";
+    // 参考 https://zhuanlan.zhihu.com/p/150290102
+    std::string chatter_topic = "/chatter";//该处需要添加/作头
+    std::string number_topic = "/numbers";
+    std::string test_topic = "/numbers_test";
 
     std::vector<std::string> topics;
     topics.push_back(chatter_topic);
